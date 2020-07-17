@@ -1,0 +1,22 @@
+{
+  "name": "sass-float-gridsystem",
+  "version": "1.0.0",
+  "description": "A grid system made in Sass using float.",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch-grid": "node-sass sass/main.sass css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leoocast/Sass-Float-GridSystem.git"
+  },
+  "author": "Leonel Castellanos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leoocast/Sass-Float-GridSystem/issues"
+  },
+  "homepage": "https://github.com/Leoocast/Sass-Float-GridSystem#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

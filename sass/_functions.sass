@@ -1,0 +1,12 @@
+@function col-width($group-size, $col-number)
+
+    $width: ($col-number - 1) * $margin-horizontal;
+
+    $calc-width: calc( (100% - #{$width}) / #{$col-number} 
+
+    @return calc( (#{$group-size} * #{$calc-width}) + (#{$group-size} - 1) * #{$margin-horizontal} 
+
+
+//Example
+    //Input: 2, 3, $margin-horizontal = 6rem
+        //Output: calc((3 * calc(100% - ( 2 * $margin-horizontal ) / 3) + (2 - 1)) * $margin-horizontal 

@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.row {
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: orangered;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc( (1 * calc( (100% - 6rem) / 2)) + (1 - 1) * 6rem); }
+  .row .col-1-of-3 {
+    width: calc( (1 * calc( (100% - 12rem) / 3)) + (1 - 1) * 6rem); }
+  .row .col-1-of-4 {
+    width: calc( (1 * calc( (100% - 18rem) / 4)) + (1 - 1) * 6rem); }
+  .row .col-2-of-3 {
+    width: calc( (2 * calc( (100% - 12rem) / 3)) + (2 - 1) * 6rem); }
+  .row .col-2-of-4 {
+    width: calc( (2 * calc( (100% - 18rem) / 4)) + (2 - 1) * 6rem); }
+  .row .col-3-of-4 {
+    width: calc( (3 * calc( (100% - 18rem) / 4)) + (3 - 1) * 6rem); }
+  .row .col-1-of-1 {
+    width: calc( (1 * calc( (100% - 0rem) / 1)) + (1 - 1) * 6rem); }
